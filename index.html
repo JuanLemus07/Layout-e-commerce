@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout grid e-comerce</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+<body>
+    <!--requerimiento 1, layout css grid-->
+    <main class="container">
+        <nav class="navbar box">
+            <h1> Mi E-comerce </h1>
+        </nav>
+
+        <!--requerimiento 3, flexbox en aside-->
+        <aside class="aside box">
+            <div>
+                <h2><strong>Categorias</strong></h2>
+            </div>
+            <div class="categorias">
+                <a href="#" target="_blank" rel="noopener noneferrer" style="text-decoration: none";>Ropa</a>
+                <a href="#" target="_blank" rel="noopener noneferrer" style="text-decoration: none";>Perfume</a>
+                <a href="#" target="_blank" rel="noopener noneferrer" style="text-decoration: none";>Accesorios</a>
+                <a href="#" target="_blank" rel="noopener noneferrer" style="text-decoration: none";>Zapatos</a>
+            </div>
+            
+        </aside>
+
+        <!--requerimiento 2, grilla de productos -->
+        <section class="products box">
+            <article>
+                <!--requerimiento 4, flexbox en items-->
+                <div class="item">
+                    <img src="assets/img/hoodie01.jpg" alt="foto de un poleron Puma">
+                    <p><strong>Poleron Puma</strong></p>
+                    <p>44.700 Clp</p>
+                    <button>Comprar</button>
+                </div>
+            </article>
+            <article>
+                <div class="item">
+                    <img src="assets/img/perfume01.jpg" alt="foto de un perfume MyKingdom">
+                    <p><strong>Perfume Mykingdom</strong></p>
+                    <p>31.400 Clp</p>
+                    <button>Comprar</button>
+                </div>
+            </article>
+            <article>
+                <div class="item">
+                    <img src="assets/img/perfume02.jpg" alt="foto de un perfume Phantom">
+                    <p><strong>Perfume Phantom</strong></p>
+                    <p>68.900 Clp</p>
+                    <button>Comprar</button>
+            </article>
+            <article>
+                <div class="item">
+                    <img src="assets/img/shoes01.jpg" alt="foto de zapatos Docker">
+                    <p><strong>Zapatos Docker</strong></p>
+                    <p>29.700 Clp</p>
+                    <button>Comprar</button>
+            </article>
+        </section>
+        
+        <footer class="footer box">
+            <small>&copy; 2023 <strong>Mi E-comerce</strong> - Todos los derechos reservados.</small>
+        </footer>
+    </main>
+</body>
+</html>

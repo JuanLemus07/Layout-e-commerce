@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*requerimiento 1 layout css grid*/
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+    'navbar navbar'
+    'aside products'
+    'footer footer';
+}
+.box {
+    border: solid 2px whitesmoke;
+    gap: 10px;
+    background-color: rgb(240, 238, 238);
+}
+.navbar {
+    grid-area: navbar;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: whitesmoke;
+    background-color: rgb(8, 88, 168);
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    font-size: 1em;
+    background-color: white;
+}
+/*requerimiento 2 grilla de productos*/
+.products {
+    grid-area: products;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    height: auto;
+    gap: 10px;
+}
+/*requerimiento 3 flexbox*/
+.aside {
+    grid-area: aside;
+    width: 20vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+.categorias {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(240, 238, 238);
+    justify-content: center;
+    margin-left: 60px;
+}
+/*requerimiento 4 flexbox*/
+.item {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px whitesmoke;
+    gap: 5px;
+    background-color: white;
+}
+button {
+    color: whitesmoke;
+    background-color: rgb(8, 88, 168);
+    font-size: 1.5em;
+}
+p{
+    background-color:white;
+    font-size: 1.5em;
+}
